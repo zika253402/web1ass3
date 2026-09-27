@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MARWIN | Catalog</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="border-bottom">
+    <nav class="navbar navbar-expand-md bg-white py-3" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand" href="index.html">marwin.</a>
+        <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-md-4">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">Catalog</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-4 py-lg-5">
+    <section class="mb-5" aria-labelledby="catalogTitle">
+      <p class="eyebrow text-muted mb-3">A little something for you</p>
+      <h1 id="catalogTitle" class="mb-3">Follow your curiosity.</h1>
+      <p class="lead text-muted mb-4">The next chapter, a fresh idea, or time to play.</p>
+      <!-- Task 6: Bootstrap buttons and a group of category links. -->
+      <div class="btn-group mb-2" role="group" aria-label="Browse categories">
+        <a class="btn btn-outline-secondary px-3 py-2" href="#books">Books</a>
+        <a class="btn btn-outline-secondary px-3 py-2" href="#stationery">Stationery</a>
+        <a class="btn btn-outline-secondary px-3 py-2" href="#games">Games</a>
+      </div>
+    </section>
+
+    <!-- Tasks 3 and 8: three Bootstrap cards, card-group and responsive grid. -->
+    <section aria-label="Product categories" class="mb-5">
+      <div class="card-group row g-4">
+        <div class="col-12 col-md-6 col-lg-4" id="books">
+          <article class="card h-100 border-0">
+            <img class="card-img-top product-image book-image rounded-3" src="assets/images/atomic.jpg" alt="Atomic Habits book cover">
+            <div class="card-body px-0 pt-3 pb-0">
+              <p class="eyebrow text-muted mb-2">Books</p>
+              <h2 class="h4 card-title">Atomic Habits</h2>
+              <p class="card-text text-muted">James Clear’s guide to building better habits, one small step at a time.</p>
+              <p class="fw-semibold mb-0">7,990 ₸</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" id="stationery">
+          <article class="card h-100 border-0">
+            <img class="card-img-top product-image rounded-3" src="assets/images/notebook.jpg" alt="Notebook and creative stationery">
+            <div class="card-body px-0 pt-3 pb-0">
+              <p class="eyebrow text-muted mb-2">Stationery</p>
+              <h2 class="h4 card-title">Everyday notebook</h2>
+              <p class="card-text text-muted">A place for your notes, sketches and ideas.</p>
+              <p class="fw-semibold mb-0">2,990 ₸</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" id="games">
+          <article class="card h-100 border-0">
+            <img class="card-img-top product-image rounded-3" src="assets/images/chess.jpg" alt="A wooden chess board and pieces">
+            <div class="card-body px-0 pt-3 pb-0">
+              <p class="eyebrow text-muted mb-2">Games</p>
+              <h2 class="h4 card-title">One more game</h2>
+              <p class="card-text text-muted">A classic chess set for quiet evenings, friendly challenges and time together.</p>
+              <p class="fw-semibold mb-0">14,990 ₸</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task 9: responsive form controls, radios and checkbox. -->
+    <section id="contact" class="border-top pt-4 pt-lg-5" aria-labelledby="contactTitle">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <p class="eyebrow text-muted mb-3">Get in touch</p>
+          <h2 id="contactTitle">A question?<br>Say hello.</h2>
+          <p class="text-muted">Looking for a book or a little inspiration? Tell us what you have in mind.</p>
+          <p class="small text-muted">This is a practice form. It does not send messages.</p>
+        </div>
+        <div class="col-lg-6">
+          <form action="#contact" method="get">
+            <div class="row g-3">
+              <div class="col-sm-6"><label class="form-label" for="name">Your name</label><input class="form-control" id="name" type="text" placeholder="Student 1" autocomplete="name" required></div>
+              <div class="col-sm-6"><label class="form-label" for="email">Email address</label><div class="input-group"><span class="input-group-text">@</span><input class="form-control" id="email" type="email" placeholder="you@example.com" autocomplete="email" required></div></div>
+              <div class="col-12">
+                <fieldset>
+                  <legend class="fs-6">What are you interested in?</legend>
+                  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="interest" id="interestBooks" value="books" checked><label class="form-check-label" for="interestBooks">Books</label></div>
+                  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="interest" id="interestOther" value="other"><label class="form-check-label" for="interestOther">Something else</label></div>
+                </fieldset>
+              </div>
+              <div class="col-12"><label class="form-label" for="message">Your message</label><textarea class="form-control" id="message" rows="4" placeholder="I am looking for..." required></textarea></div>
+              <div class="col-12"><div class="form-check"><input class="form-check-input" id="consent" type="checkbox" required><label class="form-check-label" for="consent">I understand this is a practice form.</label></div></div>
+              <div class="col-12 d-flex gap-2"><button class="btn btn-primary px-4" type="submit">Check form</button><button class="btn btn-outline-secondary" type="reset">Reset</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-light border-top py-4 mt-4">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between gap-3 mb-3"><span class="fw-semibold">MARWIN · Student concept</span><a href="responsive.html">CSS media queries demo →</a></div>
+      <p class="small text-muted mb-1">Team: Smagul Tumar | Kambarbek Zeine | Yermukan Zamira | Group: SE - 2510 </p>
+      <p class="small text-muted mb-0">Assignment 3</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

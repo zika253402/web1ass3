@@ -1,0 +1,52 @@
+/* Bootstrap utility classes handle margins and padding. */
+:root { --red: #c9253b; --ink: #242424; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Segoe UI', Arial, sans-serif; color: var(--ink); line-height: 1.6; }
+.container { max-width: 1160px; }
+a { color: var(--ink); text-decoration: none; transition: color .15s ease; }
+a:hover { color: var(--red); }
+.brand { color: var(--red); font-size: 2.5rem; font-weight: 900; letter-spacing: -.09em; }
+.navbar { --bs-navbar-active-color: var(--red); }
+.nav-link { font-weight: 500; padding-top: .5rem; padding-bottom: .5rem; }
+.eyebrow { font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.text-muted { color: #666861 !important; }
+h1, h2, h3 { font-weight: 650; letter-spacing: -.04em; }
+h1 { font-size: 2.25rem; line-height: 1.15; }
+h2 { font-size: 1.75rem; line-height: 1.2; }
+h3 { font-size: 1.2rem; }
+.lead { font-size: 1rem; line-height: 1.7; }
+section[id] { scroll-margin-top: 1.5rem; }
+.hero { background: #f8e9af; }
+.hero-image { width: 100%; height: 380px; object-fit: cover; }
+.gallery-image { width: 100%; height: 300px; object-fit: cover; background: #f3f3ef; }
+.book-image { object-fit: contain; background: #f3f3ef; }
+.product-image { width: 100%; height: 280px; object-fit: cover; }
+.product-image.book-image { object-fit: contain; }
+.card { transition: transform .18s ease, box-shadow .18s ease; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,.08); }
+.carousel-control-prev, .carousel-control-next { width: 9%; opacity: 1; }
+.carousel-control-prev-icon, .carousel-control-next-icon { background-color: #242424; border-radius: 50%; background-size: 65%; }
+.carousel-indicators [data-bs-target] { background-color: var(--red); opacity: .4; }
+.carousel-indicators .active { opacity: 1; }
+.btn { font-weight: 600; transition: transform .12s ease, box-shadow .12s ease; }
+.btn:hover { transform: translateY(-1px); }
+.btn-primary { --bs-btn-bg: var(--red); --bs-btn-border-color: var(--red); --bs-btn-hover-bg: #a81c30; --bs-btn-hover-border-color: #a81c30; --bs-btn-active-bg: #92172a; --bs-btn-active-border-color: #92172a; }
+.btn-outline-secondary { --bs-btn-color: var(--ink); --bs-btn-border-color: #b9bcb6; }
+.form-check-input:checked { background-color: var(--red); border-color: var(--red); }
+:focus-visible { outline: 3px solid #205ab8; outline-offset: 3px; }
+
+/* Task 1: mobile, tablet and desktop typography. */
+@media (min-width: 768px) {
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2rem; }
+  .lead { font-size: 1.125rem; }
+}
+@media (min-width: 992px) {
+  h1 { font-size: 3.6rem; }
+  h2 { font-size: 2.25rem; }
+  .lead { font-size: 1.25rem; }
+}
+@media (max-width: 767.98px) {
+  .hero-image { height: 240px; }
+  .gallery-image { height: 180px; }
+}

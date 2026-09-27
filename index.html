@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MARWIN | Home</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Task 5: responsive Bootstrap navigation with four links. -->
+  <header class="border-bottom">
+    <nav class="navbar navbar-expand-md bg-white py-3" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand" href="index.html">marwin.</a>
+        <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-md-4">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-4 py-lg-5">
+    <!-- Tasks 1, 3 and 4: responsive typography, two columns and spacing utilities. -->
+    <section class="hero overflow-hidden rounded-4 mb-5" aria-labelledby="heroTitle">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 p-4 p-lg-5">
+          <p class="eyebrow mb-3">Books. Creativity. Everyday joy.</p>
+          <h1 id="heroTitle" class="mb-3">A little inspiration,<br>every day.</h1>
+          <p class="lead mb-4">Find your next great read, a new creative hobby, or a thoughtful gift.</p>
+          <a class="btn btn-dark btn-lg px-4 py-3" href="catalog.html">Explore the catalog →</a>
+        </div>
+        <div class="col-lg-6"><img class="hero-image" src="assets/images/reading.jpg" alt="A person reading outdoors at sunset" width="1400" height="1050"></div>
+      </div>
+    </section>
+
+    <!-- Task 7: three slides contain nine images in total. -->
+    <section class="mb-5" aria-labelledby="inspirationTitle">
+      <div class="d-flex justify-content-between align-items-center gap-3 mb-4">
+        <h2 id="inspirationTitle" class="mb-0">Find your inspiration.</h2>
+        <a class="btn btn-outline-secondary btn-sm" href="catalog.html">View catalog</a>
+      </div>
+      <div id="inspirationCarousel" class="carousel slide" aria-label="Books, creativity and games">
+        <div class="carousel-inner rounded-4">
+          <div class="carousel-item active">
+            <div class="row g-0">
+              <div class="col-4"><img class="gallery-image book-image" src="assets/images/atomic.jpg" alt="Atomic Habits by James Clear"></div>
+              <div class="col-4"><img class="gallery-image book-image" src="assets/images/midnight.jpg" alt="The Midnight Library by Matt Haig"></div>
+              <div class="col-4"><img class="gallery-image book-image" src="assets/images/little-prince.jpg" alt="The Little Prince by Antoine de Saint-Exupéry"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0">
+              <div class="col-4"><img class="gallery-image" src="assets/images/pencils.jpg" alt="Colourful art supplies"></div>
+              <div class="col-4"><img class="gallery-image" src="assets/images/notebook.jpg" alt="Notebook and stationery"></div>
+              <div class="col-4"><img class="gallery-image book-image" src="assets/images/creative.jpg" alt="The Creative Act by Rick Rubin"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-0">
+              <div class="col-4"><img class="gallery-image" src="assets/images/toys.jpg" alt="Colourful building toys"></div>
+              <div class="col-4"><img class="gallery-image" src="assets/images/chess.jpg" alt="A wooden chess set"></div>
+              <div class="col-4"><img class="gallery-image" src="assets/images/books.jpg" alt="A collection of books"></div>
+            </div>
+          </div>
+        </div>
+        <button class="btn carousel-control-prev" type="button" data-bs-target="#inspirationCarousel" data-bs-slide="prev" aria-label="Previous slide"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+        <button class="btn carousel-control-next" type="button" data-bs-target="#inspirationCarousel" data-bs-slide="next" aria-label="Next slide"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
+        <div class="carousel-indicators mb-2">
+          <button class="btn active" type="button" data-bs-target="#inspirationCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Books slide"></button>
+          <button class="btn" type="button" data-bs-target="#inspirationCarousel" data-bs-slide-to="1" aria-label="Creativity slide"></button>
+          <button class="btn" type="button" data-bs-target="#inspirationCarousel" data-bs-slide-to="2" aria-label="Games slide"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task 3: three equal Bootstrap columns. -->
+    <section id="about" class="pt-3" aria-labelledby="aboutTitle">
+      <p class="eyebrow text-muted mb-2">A store for your curious side</p>
+      <h2 id="aboutTitle" class="mb-4">Little things. Lovely possibilities.</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4"><h3>Read something new</h3><p class="text-muted mb-0">Discover stories and ideas that stay with you long after the last page.</p></div>
+        <div class="col-12 col-md-6 col-lg-4"><h3>Make something yours</h3><p class="text-muted mb-0">A fresh notebook and a few colours can be the beginning of a great idea.</p></div>
+        <div class="col-12 col-md-6 col-lg-4"><h3>Share a little joy</h3><p class="text-muted mb-0">Bring everyone together with a game or a thoughtful gift.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-light border-top py-4 mt-4">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between gap-3 mb-3"><span class="fw-semibold">MARWIN · Student concept</span><a href="responsive.html">→</a></div>
+      <p class="small text-muted mb-1">Team: Smagul Tumar | Kambarbek Zeine | Yermukan Zamira | Group: SE - 2510 </p>
+      <p class="small text-muted mb-0">Assignment 3</p>
+    </div>
+  </footer>
+  <!-- Bootstrap only: no custom JavaScript or local JS files. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
